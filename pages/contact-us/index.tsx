@@ -1,8 +1,8 @@
 import { getCookieObject } from '@/lib/utils/loginFunctions';
 
-const home = () => {
+const ContactUs = () => {
   const userLogginDetails = getCookieObject();
   return <div>{userLogginDetails.name}</div>;
 };
 
-export default home;
+export default ContactUs;

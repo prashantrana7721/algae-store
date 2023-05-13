@@ -2,7 +2,7 @@ import { LoggingDetails } from '@/interfaces/authentication/authenticationInterf
 import { getCookieObject } from '@/lib/utils/loginFunctions';
 import { useEffect, useState } from 'react';
 
-const index = () => {
+const Home = () => {
   const [userLogginDetails, setUserLogginDetails] = useState<LoggingDetails>();
   useEffect(() => {
     setUserLogginDetails(getCookieObject());
@@ -10,4 +10,4 @@ const index = () => {
   return <div>{userLogginDetails?.name}</div>;
 };
 
-export default index;
+export default Home;

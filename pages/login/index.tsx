@@ -2,7 +2,7 @@ import { ADMIN_AUTHENTICATION } from '@/lib/demo-data/loginDemoData';
 import { setCookieDetails } from '@/lib/utils/loginFunctions';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-const index = () => {
+const Login = () => {
   const router = useRouter();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -19,4 +19,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Login;
