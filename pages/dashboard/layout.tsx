@@ -1,6 +1,11 @@
+import { ReactNode } from 'react';
 import '../styles/globals.css';
 
-const RootLayout = ({ children }) => (
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
+const RootLayout = ({ children }: RootLayoutProps) => (
   <html lang="en">
     <head>
       <link rel="preconnect" href="https://stijndv.com" />
